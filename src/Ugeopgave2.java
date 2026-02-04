@@ -16,6 +16,10 @@ void main(String[] args) {
     System.out.println( discount == 0 ? "No Discount applied!" : "Discount applied!" );
     System.out.println("Opgave 1 Slut");
 
+
+
+
+
     // Opgave 2: BMI calculator
     Scanner scan = new Scanner(System.in);
     System.out.println("Enter your weight : ");
@@ -39,6 +43,10 @@ void main(String[] args) {
 
     }
     System.out.println("Opgave 2 Slut");
+
+
+
+
 
     // AND-operator (opg. 3-4)
     // Opgave 4: Complete student report
@@ -76,6 +84,10 @@ void main(String[] args) {
     System.out.println("===================");
     System.out.println("Opgave 4 Slut");
 
+
+
+
+
     // OR-operator (opg. 5-7)
     // Opgave 6: Movie rating system
     int ageLimit = 15;
@@ -88,6 +100,10 @@ void main(String[] args) {
         System.out.println("Cannot watch movie");
     }
     System.out.println("Opgave 6 Slut");
+
+
+
+
 
     // Kombinerede operatorer (opg. 8-9)
     // Opgave 8: Insurance premium calculator
@@ -119,6 +135,10 @@ void main(String[] args) {
     System.out.println("Annual premium: " + premium + " kr");
     System.out.println("Opgave 8 Slut");
 
+
+
+
+
     // Opgave 9: Complete access control system
     boolean isAdmin = true;
     boolean accountActive = true;
@@ -145,6 +165,10 @@ void main(String[] args) {
         System.out.println("The account is inactive.");
     }
     System.out.println("Opgave 9 Slut");
+
+
+
+
 
     // Switch-case (opg. 10-14)
     // Opgave 14: Bestillingssystem
@@ -203,6 +227,10 @@ void main(String[] args) {
     System.out.println("Total Price :" + totalAmount + " kr" );
     System.out.println("Opgave 14 Slut");
 
+
+
+
+
     // While loops (opg. 15-19)
     // Opgave 19: Password-forsøg
     Scanner scanPassword = new Scanner(System.in);
@@ -228,6 +256,10 @@ void main(String[] args) {
         System.out.println("Account locked");
     }
     System.out.println("Opgave 19 Slut");
+
+
+
+
 
     // For loops (opg. 20-23)
     // Opgave
