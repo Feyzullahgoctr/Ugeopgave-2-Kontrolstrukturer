@@ -115,7 +115,33 @@ void main(String[] args) {
     }
     System.out.println("Annual premium: " + premium + " kr");
 
-    //
+    // Opgave 9: Complete access control system
+    boolean isAdmin = true;
+    boolean accountActive = true;
+    boolean isSuperUser = false;
+    boolean isUser = false;
+    boolean suspenderet = false;
+    boolean isGuest = true;
+    boolean guessTimeValid = false;
 
+    if (accountActive) {
+        System.out.println("Active: " + accountActive);
+
+        if (isAdmin || isSuperUser) {
+            System.out.println("Admin : "+ isAdmin);
+            System.out.println("Result: FULL ACCESS");
+        } else if ((isUser && !suspenderet) || (isGuest && guessTimeValid)) {
+            System.out.println("User  :" + isUser);
+            System.out.println("Guest :" + isGuest);
+            System.out.println("Result: LIMITED ACCESS");
+        } else {
+            System.out.println("Result: DENIED ACCESS");
+        }
+    } else {
+        System.out.println("The account is inactive.");
+    }
+
+    // Switch-case (opg. 10-14)
+    // Opgave
 
 }
