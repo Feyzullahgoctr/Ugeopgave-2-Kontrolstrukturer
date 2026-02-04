@@ -261,6 +261,7 @@ void main(String[] args) {
 
 
 
+
     // For loops (opg. 20-23)
     // Opgave 21: Multiplication tables 1-10
     for (int i = 1; i <= 10; i++) {
@@ -269,6 +270,7 @@ void main(String[] args) {
         }
         System.out.println();
     }
+    System.out.println("Opgave 21 Slut");
 
 
 
@@ -286,6 +288,7 @@ void main(String[] args) {
             System.out.println("Number : " + i);
         }
     }
+    System.out.println("Opgave 22 Slut");
 
 
 
@@ -303,7 +306,7 @@ void main(String[] args) {
             System.out.print(i + " is a prime number.\n");
         }
     }
-
+    System.out.println("Opgave 23 Slut");
 
 
 
