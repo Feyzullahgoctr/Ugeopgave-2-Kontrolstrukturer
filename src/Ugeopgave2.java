@@ -15,7 +15,6 @@ void main(String[] args) {
     System.out.println("Final Price :" + finalPrice + " kr");
     System.out.println( discount == 0 ? "No Discount applied!" : "Discount applied!" );
     System.out.println("Opgave 1 Slut");
-    System.out.println();
 
     // Opgave 2: BMI calculator
     Scanner scan = new Scanner(System.in);
@@ -40,7 +39,6 @@ void main(String[] args) {
 
     }
     System.out.println("Opgave 2 Slut");
-    System.out.println();
 
     // AND-operator (opg. 3-4)
     // Opgave 4: Complete student report
@@ -77,7 +75,6 @@ void main(String[] args) {
     System.out.println("Comment : " + comment);
     System.out.println("===================");
     System.out.println("Opgave 4 Slut");
-    System.out.println();
 
     // OR-operator (opg. 5-7)
     // Opgave 6: Movie rating system
@@ -91,7 +88,6 @@ void main(String[] args) {
         System.out.println("Cannot watch movie");
     }
     System.out.println("Opgave 6 Slut");
-    System.out.println();
 
     // Kombinerede operatorer (opg. 8-9)
     // Opgave 8: Insurance premium calculator
@@ -122,7 +118,6 @@ void main(String[] args) {
     }
     System.out.println("Annual premium: " + premium + " kr");
     System.out.println("Opgave 8 Slut");
-    System.out.println();
 
     // Opgave 9: Complete access control system
     boolean isAdmin = true;
@@ -150,7 +145,6 @@ void main(String[] args) {
         System.out.println("The account is inactive.");
     }
     System.out.println("Opgave 9 Slut");
-    System.out.println();
 
     // Switch-case (opg. 10-14)
     // Opgave 14: Bestillingssystem
@@ -208,6 +202,35 @@ void main(String[] args) {
     System.out.println("Quantity : "+ quantity);
     System.out.println("Total Price :" + totalAmount + " kr" );
     System.out.println("Opgave 14 Slut");
-    System.out.println();
+
+    // While loops (opg. 15-19)
+    // Opgave 19: Password-forsøg
+    Scanner scanPassword = new Scanner(System.in);
+    String correctPassword = "secret123";
+    int maxAttempts = 3;
+    int attempt = 0;
+    while (attempt < maxAttempts) {
+
+        System.out.println("Enter Password");
+        String password = scanPassword.nextLine();
+
+        if (password.equals(correctPassword)) {
+            System.out.println("Password is correct");
+            break;
+        } else {
+            System.out.println("Password is not correct");
+            System.out.println("Attempts used : " + (attempt + 1) + "/" + maxAttempts);
+        }
+        attempt++;
+
+    }
+    if (attempt == maxAttempts) {
+        System.out.println("Account locked");
+    }
+    System.out.println("Opgave 19 Slut");
+
+    // For loops (opg. 20-23)
+    // Opgave
+
 
 }
