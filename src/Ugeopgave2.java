@@ -14,7 +14,8 @@ void main(String[] args) {
     finalPrice = totalPrice - discount;
     System.out.println("Final Price :" + finalPrice + " kr");
     System.out.println( discount == 0 ? "No Discount applied!" : "Discount applied!" );
-
+    System.out.println("Opgave 1 Slut");
+    System.out.println();
 
     // Opgave 2: BMI calculator
     Scanner scan = new Scanner(System.in);
@@ -38,6 +39,8 @@ void main(String[] args) {
         }
 
     }
+    System.out.println("Opgave 2 Slut");
+    System.out.println();
 
     // AND-operator (opg. 3-4)
     // Opgave 4: Complete student report
@@ -73,6 +76,8 @@ void main(String[] args) {
     System.out.println("Status : " + status);
     System.out.println("Comment : " + comment);
     System.out.println("===================");
+    System.out.println("Opgave 4 Slut");
+    System.out.println();
 
     // OR-operator (opg. 5-7)
     // Opgave 6: Movie rating system
@@ -85,6 +90,8 @@ void main(String[] args) {
     } else {
         System.out.println("Cannot watch movie");
     }
+    System.out.println("Opgave 6 Slut");
+    System.out.println();
 
     // Kombinerede operatorer (opg. 8-9)
     // Opgave 8: Insurance premium calculator
@@ -114,6 +121,8 @@ void main(String[] args) {
         System.out.println("Not in the risk category");
     }
     System.out.println("Annual premium: " + premium + " kr");
+    System.out.println("Opgave 8 Slut");
+    System.out.println();
 
     // Opgave 9: Complete access control system
     boolean isAdmin = true;
@@ -140,8 +149,65 @@ void main(String[] args) {
     } else {
         System.out.println("The account is inactive.");
     }
+    System.out.println("Opgave 9 Slut");
+    System.out.println();
 
     // Switch-case (opg. 10-14)
-    // Opgave
+    // Opgave 14: Bestillingssystem
+    String item = "coffee";
+    String size = "large";
+    int quantity = 2;
+    double price = 0;
+    double totalAmount = 0;
+
+    switch (item) {
+        case "coffee":{
+            switch (size) {
+                case "small":
+                    price = 25 * 1;
+                    break;
+                case "medium":
+                    price = 25 * 1.2;
+                    break;
+                case "large":
+                    price = 25 * 1.5;
+                    break;
+            }
+            break;
+        }
+        case "tea":
+            switch (size) {
+                case "small":
+                    price = 20 * 1;
+                    break;
+                case "medium":
+                    price = 20 * 1.2;
+                    break;
+                case "large":
+                    price = 20 * 1.5;
+                    break;
+            }
+            break;
+        case "sandwich":
+            price = 45;
+            break;
+        case "cake":
+            price = 35;
+            break;
+        default:
+            price = 0;
+            System.out.println("Invalid item");
+    }
+
+    totalAmount = quantity * price;
+
+    System.out.println("=== ORDER ===");
+    System.out.println("Item : " + item);
+    System.out.println( item.equals("coffee") || item.equals("tea") ? "Size : " +  size : "No size" );
+    System.out.println("Price : " + price + " kr");
+    System.out.println("Quantity : "+ quantity);
+    System.out.println("Total Price :" + totalAmount + " kr" );
+    System.out.println("Opgave 14 Slut");
+    System.out.println();
 
 }
