@@ -262,6 +262,52 @@ void main(String[] args) {
 
 
     // For loops (opg. 20-23)
+    // Opgave 21: Multiplication tables 1-10
+    for (int i = 1; i <= 10; i++) {
+        for (int j = 1; j <= 10; j++) {
+            System.out.print("(" + i + "x" + j + ") : " + (i * j)+ "  ");
+        }
+        System.out.println();
+    }
+
+
+
+
+
+    // Opgave 22:  Classic FizzBuzz problem
+    for (int i = 1; i <= 30; i++) {
+        if (i % 3 == 0 && i % 5 == 0) {
+            System.out.println("FizzBuzz");
+        } else if (i % 3 == 0) {
+            System.out.println("Fizz");
+        } else if (i % 5 == 0) {
+            System.out.println("Buzz");
+        }   else {
+            System.out.println("Number : " + i);
+        }
+    }
+
+
+
+
+
+    // Opgave  23: Find om et tal er primtal.
+    for (int i = 2; i < 29; i++) {
+        int count = 0;
+        for (int j = 1; j <= i; j++) {
+            if (i % j == 0) {
+                count++;
+            }
+        }
+        if (count == 2) {
+            System.out.print(i + " is a prime number.\n");
+        }
+    }
+
+
+
+
+    // For loops med array (opg. 24-26)
     // Opgave
 
 
