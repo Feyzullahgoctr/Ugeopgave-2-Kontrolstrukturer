@@ -311,7 +311,69 @@ void main(String[] args) {
 
 
     // For loops med array (opg. 24-26)
-    // Opgave
+    // Opgave 24: Grade statistics
+    int[] scores = {85, 92, 78, 88, 95, 73, 90};
+    double sum = 0;
+    int min = scores[0];
+    int max = scores[0];
+    for (int i = 0; i < scores.length; i++) {
+        if (min > scores[i]) {
+            min = scores[i];
+        }
+        if (max < scores[i]) {
+            max = scores[i];
+        }
+        sum += scores[i];
+
+        if (scores[i] >= 80) {
+            System.out.print(scores[i] + " ");
+        }
+    }
+    System.out.println();
+    System.out.println("Average : " + (double) sum / scores.length);
+    System.out.println("Højeste karakter : " + max);
+    System.out.println("Laveste karakter :" + min);
+    System.out.println("Opgave 24 Slut");
+
+
+
+
+
+
+    // For-each loops (opg. 27-29)
+    // Opgave 27: Shopping cart total
+    double[] shoppingPrice = {299, 149, 899, 49};
+    double totalShopPrice = 0;
+    for (double shopPrice : shoppingPrice) {
+        totalShopPrice += shopPrice;
+    }
+    System.out.println("Total Price : " + totalShopPrice + " kr");
+    System.out.println("Opgave 27 Slut");
+
+
+
+
+
+
+    // Opgave 28: Student names
+    String [] roster = {"Emma", "Liam", "Olivia", "Noah", "Ava"};
+    String maxRosterName = roster[0];
+    for (String name : roster) {
+        System.out.println("Velkommen " + name);
+
+        if (maxRosterName.length() < name.length() ) {
+            maxRosterName = name;
+        }
+    }
+    for (String name : roster) {
+        if (name.length() == 4) {
+            System.out.println("Navne med 4 bogstaver :" + name);
+        }
+    }
+    System.out.println("Det længste navn : " + maxRosterName);
+    System.out.println("Opgave 28 Slut");
+
+
 
 
 }
