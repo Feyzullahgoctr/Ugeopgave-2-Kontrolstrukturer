@@ -359,7 +359,7 @@ void main(String[] args) {
     String [] roster = {"Emma", "Liam", "Olivia", "Noah", "Ava"};
     String maxRosterName = roster[0];
     for (String name : roster) {
-        System.out.println("Velkommen " + name);
+        System.out.println("Welcome " + name);
 
         if (maxRosterName.length() < name.length() ) {
             maxRosterName = name;
@@ -367,10 +367,10 @@ void main(String[] args) {
     }
     for (String name : roster) {
         if (name.length() == 4) {
-            System.out.println("Navne med 4 bogstaver :" + name);
+            System.out.println("Names with 4 letters :" + name);
         }
     }
-    System.out.println("Det længste navn : " + maxRosterName);
+    System.out.println("The longest name : " + maxRosterName);
     System.out.println("Opgave 28 Slut");
 
 
